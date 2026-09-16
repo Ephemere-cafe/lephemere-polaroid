@@ -39,3 +39,23 @@ main{width:min(1540px,calc(100% - 40px))}
 @media(min-width:721px) and (max-width:1100px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){main{width:calc(100% - 24px)}.product-grid{grid-template-columns:1fr}}
 
+
+/* v46：拍攝服務網站文字可讀性 */
+.eyebrow{font-size:13px}.page-intro p,.session-summary{font-size:16px;line-height:1.75}
+.access-copy span,.link-status{font-size:14px;line-height:1.75}.ticket-link-form input,.ticket-link-form button,.member-link-form select,.member-link-form button{font-size:15px}
+.service-notice{font-size:16px}.service-notice p{line-height:1.85}
+.maid-filter-copy p,.maid-filter-copy small{font-size:13px}.maid-nav span{font-size:15px}.maid-nav small{font-size:11px}
+.service-filter-row>strong{font-size:18px}.category-nav button{font-size:15px}
+.product-service{font-size:13px}.product-description{font-size:15px;line-height:1.8}.product-limit{font-size:13px}.availability{font-size:12px}
+.product-actions button,.primary{font-size:15px}.cart .empty{font-size:14px}.cart-line{font-size:14px}.cart-note{font-size:13px}.task-row small{font-size:13px}
+@media(max-width:720px){.page-intro p,.session-summary,.service-notice{font-size:15px}.product-description{font-size:14px}.maid-nav span{font-size:14px}}
+
+/* v47：商品圖片收藏展示框 */
+.product-image{height:280px;min-height:280px;margin:14px 14px 0;padding:11px;border:1px solid #ddcfc1;border-radius:12px;background:#f3ece5;box-shadow:inset 0 0 0 5px rgba(255,253,249,.62)}
+.product-image img,.product-image img.chibi{width:100%;height:100%;object-fit:contain;padding:0}
+.product-image.is-photo{background:#f7f2eb}
+.product-image.is-photo img{border-radius:8px;background:#fffdfa;box-shadow:0 5px 16px rgba(74,48,50,.10)}
+.product-image.is-chibi{padding:22px;background:radial-gradient(circle at 50% 42%,#fffaf7 0,#eee3e5 72%,#e7dcde 100%)}
+.product-card:nth-child(3n+2) .product-image,.product-card:nth-child(3n+3) .product-image{background:#f3ece5}
+.product-card:nth-child(3n+2) .product-image.is-chibi,.product-card:nth-child(3n+3) .product-image.is-chibi{background:radial-gradient(circle at 50% 42%,#fffaf7 0,#eee3e5 72%,#e7dcde 100%)}
+@media(max-width:720px){.product-image{height:290px;min-height:290px;margin:12px 12px 0;padding:9px}.product-image.is-chibi{padding:20px}}
